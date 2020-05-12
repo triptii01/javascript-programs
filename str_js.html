@@ -1,0 +1,95 @@
+<html>
+<body>
+
+<h2>Strings</h2>
+
+<p>we can slice the strings.</p>
+
+<p id="demo"></p>
+
+<script>
+
+//slicing the string
+
+var str = "apple, banana, kiwi";
+var txt = str.slice(7,13);
+
+document.getElementById("demo").innerHTML = txt;
+
+</script>
+
+<p id="ki"></p>
+
+<script>
+
+//slicing from backwards
+var str = "werjkjhggfdsadyuwertyu";
+var msg = str.slice(-7);
+
+document.getElementById("ki").innerHTML = msg;
+
+</script>
+
+
+<p id="po"></p>
+
+<script>
+
+//slicing with only positive parameters
+var str = "werty werfdd srethyg ds ds cd fd gr f dsaaaas";
+var lo = str.substring(7,18);
+
+document.getElementById("po").innerHTML = lo;
+
+</script>
+
+<p id="re"></p>
+
+<script>
+
+//slicing with a fixed content in the string as the second parameter tells the size
+var str = "apple, banana, kiwi";
+var by = str.substr(7,6);
+
+document.getElementById("re").innerHTML = by;
+
+</script>
+
+<p id="si"></p>
+
+<script>
+
+//replacing string content
+
+str = "hello! everyone present there.";
+var n = str.replace("there", "here");
+
+
+//converting into uppercase
+
+var m = n.toUpperCase();
+
+document.getElementById("si").innerHTML = n + "    " + m;
+
+</script>
+
+<p id='ol'></p>
+
+<script>
+
+//concatenation method to join two or more strings
+
+var t1 = "hello!";
+var t2 = "world.";
+var t3 = t1.concat(" ", t2);
+
+var st = "there are less people at the shop.";
+var x = st.charAt(8);
+
+document.getElementById("ol").innerHTML = t3 + " " +
+ "char at 8 index value is: " + x;
+
+</script>
+
+</body>
+</html>
